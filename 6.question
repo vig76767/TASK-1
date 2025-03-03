@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		double num2 = 100.0;
+		
+        if(num<500){
+            System.out.print("no discount");
+        }else if(num>=500 && num <=1000){
+            double num4 = num/num2;
+            num4*=10;
+            double num5 =num-num4;
+            System.out.print("This is your discount price: "+num5);
+        }else if(num>1000){
+            double num4 = num/num2;
+            num4*=20;
+           double num5= num-num4;
+            System.out.print("This is your discount price: "+num5);
+        }else {
+            System.out.print("Invaild Entry");
+        }
+	}
+}
